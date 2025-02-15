@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+
+    <title>Principal</title>
+</head>
+<body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item ml-3 py-4" href="index.html">
+            <img src="cloth.png" alt="" style="max-height: 50px;">
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu is-size-5">
+          <div class="navbar-start ml-5">
+            <a class="navbar-item" href="catalogo.html">
+              Catálogo
+            </a>
+      
+            <a class="navbar-item" href="#aboutus">
+              About Us
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Colecciones
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="catalogo.html">
+                  Nueva
+                </a>
+                <a class="navbar-item is-selected" href="catalogo.html">
+                  Anterior
+                </a>
+                <a class="navbar-item" href="#contactoid">
+                  Contacto
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="#contactoid">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <a href="catalogo.html">
+      <section class="hero is-large is-info">
+        <div class="hero2-background"></div>
+        <div class="hero-body">
+          <p class="title has-text-white is-size-2">Más Reciente</p>
+          <p class="subtitle has-text-white is-size-2">Coleccón Mas Reciente</p>
+        </div>
+      </section>
+    </a>
+
+    <a href="catalogo.html">
+      <section class="hero is-large is-info">
+  <div class="hero-background"></div>
+  <div class="hero-body">
+    <p class="title is-size-2">Anterior</p>
+    <p class="subtitle has-text-white is-size-2">Colección Anterior</p>
+  </div>
+</section>
+</a>
+
+<br>
+
+<section>
+
+  <div class="content p-6 mx-6 my-6">
+    <h1 class="is-size-1 presentacion" id="aboutus">Quienes somos?</h1>
+    <p class="is-size-5 contenido"> 
+      12th Club Clothing es una marca hondureña de streetwear que fusiona estilo, autenticidad y cultura urbana. Nacimos con la visión de representar la esencia de las calles, combinando diseños audaces, materiales de alta calidad y un espíritu que refleja la identidad de nuestra generación. Cada prenda que creamos es más que ropa: es una declaración de actitud y pertenencia.
+
+      Nos inspira la creatividad de nuestra gente, la música, el arte y la energía vibrante de Honduras. Creemos en la autoexpresión y en romper esquemas, llevando el streetwear a otro nivel con un enfoque original y auténtico.
+    </p>
+  </div>
+
+</section>
+
+<br>
+
+<div class="content is-flex is-justify-content-center my-6">
+<button class="button is-link is-dark is-large is-outlined vercat"> <a href="catalogo.html" class="vercata">Ver Catálogo</a></button>
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+
+<style>
+
+
+  body{
+
+    background-color: rgb(19, 17, 24);
+
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-background {
+    filter: grayscale();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('trendy-male-fashion-model-in-edgy-streetwear-with-layered-accessories-and-urban-grey-background-highlighting-contemporary-fashion-free-photo.jpg') center/cover no-repeat;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    z-index: 0;
+
+  }
+
+  .hero2-background {
+    filter: grayscale();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('edgy-fashion-model-in-streetwear-with-layered-accessories-urban-grey-background-modern-males-portrait-trendy-street-style-fashion-lifestyle-portrait-free-photo.jpg') center/cover no-repeat;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    z-index: 0;
+
+  }
+
+  .hero:hover .hero2-background {
+    filter: grayscale();
+    transform: scale(1.1);
+    filter: brightness(50%);
+  }
+
+
+  
+
+  .hero:hover .hero-background {
+    transform: scale(1.1);
+    filter: brightness(50%);
+  }
+
+  p{
+
+    color: white !important; 
+    transition: color 0.3s ease-in-out;
+  }
+
+  .hero:hover p{
+
+    color: rgb(132, 68, 192) !important;
+
+
+  }
+
+  .hero-body {
+    position: relative;
+    z-index: 1;
+}
+
+.presentacion {
+  animation: tipografia 2s infinite, fade 2s normal;
+}
+
+
+
+.contenido{
+
+  animation: fade 2s normal;
+  color: rgb(119, 80, 155) !important;
+  transition: 1s;
+
+}
+
+.contenido:hover{
+
+  transform: scale(1.04);
+
+}
+
+.is-dark{
+
+  background-color: rgb(19, 17, 24);;
+
+}
+
+.is-link{
+
+  color: rgb(119, 45, 189) !important ;
+  border-color: rgb(119, 45, 189) !important;
+
+
+}
+
+.vercat{
+
+  transition: 0.5s;
+
+}
+
+.vercat:hover{
+
+  transform: scale(1.2);
+  color: rgb(255, 255, 255) !important;
+  border-color: white;
+
+}
+
+.navbar-item{
+
+  color: rgb(153, 110, 192) !important;
+
+}
+
+.navbar-item:hover{
+
+color: rgb(255, 255, 255) !important;
+
+}
+
+.navbar-link{
+
+color: rgb(153, 110, 192) !important;
+
+}
+
+.navbar-link:hover{
+
+color: rgb(255, 255, 255) !important;
+
+}
+
+.vercata{
+
+color: blueviolet !important;
+
+}
+
+.vercata:hover{
+
+color: rgb(199, 144, 250) !important;
+
+}
+
+
+
+@keyframes tipografia {
+  0% {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  20% {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  40% {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  60% {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  80% {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  100% {
+    font-family: 'Courier New', Courier, monospace; /* Vuelve al inicio */
+  }
+}
+
+@keyframes fade {
+
+  0%{
+
+    opacity: 0;
+    transform: translateY(-30px);
+
+  }
+  100%
+  {
+
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+  
+}
+
+  
+
+
+
+
+  
+</style>
+
+
+</body>
+
+<footer class="footer" id="contactoid">
+  <div class="content has-text-centered is-link">
+    <p>
+      <p class="is-size-4 my-0">by</p>
+      <a href="https://www.instagram.com/yeshuarodriguez12/" class="is-size-3 yeshua">
+        Yeshua Rodríguez
+      </a>
+    </p>
+  </div>
+</footer>
+
+<style>
+
+  footer{
+
+    background-color: rgb(15, 14, 20) !important;
+
+  }
+
+  .yeshua {
+  color: rgb(96, 50, 182);
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  transition: letter-spacing 0.3s ease-in-out; 
+}
+
+.yeshua:hover {
+  transform: scale(1.2);
+  letter-spacing: 2px;
+}
+
+</style>
+
+
+</html>
